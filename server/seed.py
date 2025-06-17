@@ -2,7 +2,7 @@ from app import app
 from models import db
 from models.pizza import Pizza
 from models.restaurant import Restaurant
-from models.restaurant_pizza import RestaurantPizza
+from server.models.restaurant_pizza import RestaurantPizza
 
 with app.app_context():
     print("Seeding database...")
