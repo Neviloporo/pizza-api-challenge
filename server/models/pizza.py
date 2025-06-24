@@ -8,4 +8,4 @@ class Pizza(db.Model):
     name = db.Column(db.String, nullable=False)
     ingredients = db.Column(db.String, nullable=False)
 
-    restaurant_pizzas = relationship('RestaurantPizza', back_populates='pizza')
+    restaurant_pizzas = db.relationship('RestaurantPizza', back_populates='pizza')

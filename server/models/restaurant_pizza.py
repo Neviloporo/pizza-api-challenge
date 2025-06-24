@@ -11,8 +11,8 @@ class RestaurantPizza(db.Model):
     restaurant_id = db.Column(db.Integer, db.ForeignKey('restaurants.id'), nullable=False)
     pizza_id = db.Column(db.Integer, db.ForeignKey('pizzas.id'), nullable=False)
 
-    restaurant = relationship('Restaurant', back_populates='restaurant_pizzas')
-    pizza = relationship('Pizza', back_populates='restaurant_pizzas')
+    restaurant = db.relationship('Restaurant', back_populates='restaurant_pizzas')
+    pizza = db.relationship('Pizza', back_populates='restaurant_pizzas')
 
     __table_args__ = (
         CheckConstraint('price >= 1 AND price <= 30', name='check_price_range'),
