@@ -7,7 +7,7 @@ A RESTful API for managing a pizza restaurant, built using Flask and SQLAlchemy.
 
 ### Create Virtual Environment & Install Dependencies
 
-
+<!-- INSTALLATION AND SETUP -->
 pipenv install flask flask_sqlalchemy flask_migrate
 
 pipenv shell
