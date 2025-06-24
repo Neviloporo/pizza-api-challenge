@@ -1,16 +1,15 @@
-
-
-# 🍕 Pizza Restaurant API
+# Pizza Restaurant API
 
 A RESTful API for managing a pizza restaurant, built using Flask and SQLAlchemy. No frontend required — test everything using **Postman**.
 
 
-## 📁 Project Setup
+## Project Setup
 
-### 🧰 Create Virtual Environment & Install Dependencies
+### Create Virtual Environment & Install Dependencies
 
 
 pipenv install flask flask_sqlalchemy flask_migrate
+
 pipenv shell
 
 
@@ -35,7 +34,7 @@ python server/seed.py
 
 
 
-## 🧩 Models
+## Models
 
 ### Restaurant
 
@@ -60,7 +59,7 @@ python server/seed.py
 - **Relationships**: Belongs to Pizza and Restaurant
 
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### `GET /restaurants`
 
@@ -118,16 +117,9 @@ Creates a RestaurantPizza.
 }
 
 
-**Error Response:**
 
-<!-- json -->
-{
-  "errors": ["Price must be between 1 and 30"]
-}
 
----
-
-## 🧪 Testing with Postman
+## Testing with Postman
 
 1. Open Postman
 2. Import `challenge-1-pizzas.postman_collection.json`
@@ -135,6 +127,16 @@ Creates a RestaurantPizza.
 
 ---
 
-## 📷 Screenshots
+## Routes Deliveries
 
+## GET All Restaurants
 ![All the restaurants](./screenshots/Screenshot%20from%202025-06-24%2011-33-47.png)
+
+## GET All Pizzas
+![All the pizzas](./screenshots/Screenshot%20from%202025-06-24%2011-34-04.png)
+
+  If there is an error
+  ![erro](./screenshots/Screenshot%20from%202025-06-24%2011-58-58.png)
+
+## Delete Pizzas
+![deletes](./screenshots/Screenshot%20from%202025-06-24%2012-00-50.png)
